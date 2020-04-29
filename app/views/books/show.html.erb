@@ -1,0 +1,35 @@
+<div class="container bg-dark text-white m-5 p-5">
+<h1>Descripcion del libro</h1>
+  <div class="container">
+    <p id="notice"><%= notice %></p>
+        <p>
+          <strong>Title:</strong>
+          <%= @book.title %>
+        </p>
+        <p>
+          <strong>Author:</strong>
+          <%= @book.author %>
+        </p>
+        <p>
+          <strong>Date in:</strong>
+          <%= @book.date_in %>
+        </p>
+        <p>
+          <strong>Date out:</strong>
+          <%= @book.date_out %>
+        </p>
+        <p>
+          <strong>Coment:</strong>
+          <%= @book.coment %>
+        </p>
+        <p>
+          <strong>Status:</strong>
+          <%= @book.status %>
+        </p>
+  </div>    
+</div>
+
+<button type="button" class="btn btn-primary"><%= link_to 'Editar', edit_book_path %></button>
+<button type="button" class="btn btn-primary"><%= link_to 'Volver', books_path %></button>
+
+
